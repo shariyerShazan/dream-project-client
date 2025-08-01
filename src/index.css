@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+
+
+
+@theme {
+    --color-myColor: #fd6640 ;
+  }
+  
+  
