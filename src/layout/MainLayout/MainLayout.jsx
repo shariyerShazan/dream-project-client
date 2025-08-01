@@ -3,9 +3,12 @@ import Header from '../../components/Header/Header'
 
 function MainLayout() {
   return (
-    <div className='w-[95%] mx-auto'>
-      <Header />
+    <div>
+    <Header />
+    <div className='w-[90%] mx-auto'>
+      
       main layout
+    </div>
     </div>
   )
 }

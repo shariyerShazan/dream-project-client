@@ -1,12 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router'
 import Search from '../Search/Search'
-
+import { FaRegHeart } from "react-icons/fa6";
+import { Badge } from '@mui/material';
+import { Link } from 'react-router';
+import { BsCart3 } from "react-icons/bs";
+import { GoGitCompare } from "react-icons/go";
+import HeaderAuth from './HeaderAuth/HeaderAuth';
 
 function Header() {
   return (
-    <div>
-          <div className='flex items-center'>
+    <div className='border-y-2 border-gray-200 mt-2'>
+          <div className='flex items-center mx-auto w-[90%]'>
                 <div className='w-[25%]'>
                     
                     <Link className='flex items-center'  to={"/"}>
@@ -19,7 +23,25 @@ function Header() {
                     <Search />
                 </div>
                 <div  className='w-[25%]'>
-
+                    <div className='flex  justify-end gap-6'>
+                         <HeaderAuth />
+                         <div>
+                         <Badge badgeContent={4} color="primary">
+                                  <GoGitCompare className='hover:text-myColor cursor-pointer'  size={25} />
+                            </Badge>
+                         </div>
+                         <div>
+                             <Badge badgeContent={4} color="primary">
+                                  <FaRegHeart className='hover:text-myColor cursor-pointer'  size={25} />
+                            </Badge>
+                         </div>
+                         <div>
+                             <Badge badgeContent={4} color="primary">
+                                  <BsCart3 className='hover:text-myColor cursor-pointer'  size={25} />
+                            </Badge>
+                         </div>
+                        
+                    </div>
                 </div>
           </div>
     </div>
