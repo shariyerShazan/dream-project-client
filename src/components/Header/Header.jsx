@@ -9,8 +9,8 @@ import HeaderAuth from './HeaderAuth/HeaderAuth';
 
 function Header() {
   return (
-    <div className='border-y-2 border-gray-200 mt-2'>
-          <div className='flex items-center mx-auto w-[90%]'>
+    <div className='border-y-2 border-gray-200 '>
+          <div className='flex items-center mx-auto w-[95%]'>
                 <div className='w-[25%]'>
                     
                     <Link className='flex items-center'  to={"/"}>

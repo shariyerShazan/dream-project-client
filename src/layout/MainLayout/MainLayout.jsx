@@ -1,13 +1,17 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
+import Navigation from '../../components/Header/Navigation/Navigation'
+import TopHeader from '../../components/Header/TopHeader/TopHeader'
+import { Outlet } from 'react-router'
 
 function MainLayout() {
   return (
     <div>
+      <TopHeader />
     <Header />
-    <div className='w-[90%] mx-auto'>
-      
-      main layout
+    <Navigation />
+    <div className='w-[95%] mx-auto'>
+      <Outlet />
     </div>
     </div>
   )

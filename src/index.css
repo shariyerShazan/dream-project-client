@@ -1,10 +1,10 @@
 @import "tailwindcss";
-
-
+@plugin "daisyui";
 
 
 @theme {
     --color-myColor: #fd6640 ;
+    --color-myColortwo: #1976d2 ;
   }
   
   
